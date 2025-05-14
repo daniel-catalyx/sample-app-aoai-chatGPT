@@ -41,10 +41,10 @@ class _UiSettings(BaseSettings):
         env_ignore_empty=True
     )
 
-    title: str = "Contoso"
+    title: str = "Catalyx GPT"
     logo: Optional[str] = None
     chat_logo: Optional[str] = None
-    chat_title: str = "Start chatting"
+    chat_title: str = "Welcome to Catalyx GPT"
     chat_description: str = "This chatbot is configured to answer your questions"
     favicon: str = "/favicon.ico"
     show_share_button: bool = True

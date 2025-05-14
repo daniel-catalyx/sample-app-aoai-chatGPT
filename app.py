@@ -41,6 +41,11 @@ bp = Blueprint("routes", __name__, static_folder="static", template_folder="stat
 cosmos_db_ready = asyncio.Event()
 
 
+from dotenv import load_dotenv
+
+load_dotenv()
+print(os.getenv("AZURE_OPENAI_RESOURCE"))
+
 def create_app():
     app = Quart(__name__)
     app.register_blueprint(bp)
